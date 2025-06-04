@@ -161,3 +161,54 @@ p {
 .card.cadastroActive::after {
     transform: translateX(-50%);
 }
+
+/* Transitions */
+.card::after {
+    transition: all 0.5s ease-in-out;
+}
+
+.facacadastro {
+    transition: all .3s 0;
+    transform: translateX(200%);
+    opacity: 0;
+}
+
+.formlogin {
+    opacity: 0;
+    transition: all .3s 0;
+}
+
+.card.loginActive .facacadastro {
+    transform: translateX(0);
+    transition: all .3s .3s;
+    opacity: 1;
+}
+
+.card.loginActive .formlogin {
+    transform: translateX(0);
+    transition: all .3s .3s;
+    opacity: 1;
+}
+
+.facalogin {
+    transition: all .3s 0;
+    transform: translateX(-200%);
+    opacity: 0;
+}
+
+.formcadastro {
+    opacity: 0;
+    transition: all .3s 0;
+}
+
+.card.cadastroActive .facalogin {
+    transform: translateX(0);
+    transition: all .3s .3s;
+    opacity: 1;
+}
+
+.card.cadastroActive .formcadastro {
+    transform: translateX(0);
+    transition: all .3s .3s;
+    opacity: 1;
+}
